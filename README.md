@@ -27,11 +27,30 @@ A personal Telegram bot that acts as a **"Digital Jar of Notes"**. It allows an 
    ```bash
    git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
    cd your-repo-name
-2. **User Commands**
-   '''bash
-   Command,Description
-   /start or /menu,Opens the interactive button menu.
-   /romantic,Fetches a random romantic voice note.
-   /sad,Fetches a comforting voice note.
-   /hope,Fetches a hopeful message.
-   /shayari,Fetches a random message from any category.
+## 🤖 Commands
+
+### 🔒 Admin (You)
+| Command | Usage | Description |
+| :--- | :--- | :--- |
+| `/upload <mood>` | `/upload romantic` | Upload a voice note for a specific mood. |
+| `/addtext <mood> <text>` | `/addtext sad I miss you` | Save a text message/poem for a mood. |
+
+### 💖 User (Her)
+| Command | Description |
+| :--- | :--- |
+| `/start` or `/menu` | Opens the interactive button menu. |
+| `/romantic` | Fetches a random romantic voice note. |
+| `/sad` | Fetches a comforting voice note. |
+| `/hope` | Fetches a hopeful message. |
+| `/shayari` | Fetches a random message from any category. |
+
+---
+
+## 📂 Project Structure
+
+```text
+├── bot.py              # Main bot logic
+├── requirements.txt    # List of python libraries
+├── Procfile            # Worker command for Railway
+├── .gitignore          # Tells git to ignore .env
+└── README.md           # Documentation
