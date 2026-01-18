@@ -20,7 +20,7 @@ if not DATABASE_URL:
     raise ValueError("DATABASE_URL not found. Make sure to add the PostgreSQL plugin in Railway.")
 
 ADMIN_ID = 1384677187   # REPLACE WITH YOUR REAL ID
-HER_ID = 987654321      # REPLACE WITH HER REAL ID
+HER_ID = 1449608043      # REPLACE WITH HER REAL ID
 
 # Initialize bot
 bot = telebot.TeleBot(BOT_TOKEN)
