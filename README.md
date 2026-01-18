@@ -27,3 +27,11 @@ A personal Telegram bot that acts as a **"Digital Jar of Notes"**. It allows an 
    ```bash
    git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
    cd your-repo-name
+2. **User Commands**
+   '''bash
+   Command,Description
+   /start or /menu,Opens the interactive button menu.
+   /romantic,Fetches a random romantic voice note.
+   /sad,Fetches a comforting voice note.
+   /hope,Fetches a hopeful message.
+   /shayari,Fetches a random message from any category.
