@@ -19,7 +19,7 @@ if not BOT_TOKEN:
 if not DATABASE_URL:
     raise ValueError("DATABASE_URL not found. Make sure to add the PostgreSQL plugin in Railway.")
 
-ADMIN_ID = 1384677187   # REPLACE WITH YOUR REAL ID
+ADMIN_ID = 1384677141   # REPLACE WITH YOUR REAL ID
 HER_ID = 1449608043      # REPLACE WITH HER REAL ID
 
 # Initialize bot
