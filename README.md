@@ -1,15 +1,29 @@
 ﻿# Telegram_ChatBot
-🌙 Mood-Aware Voice Note BotA personal Telegram bot that acts as a "Digital Jar of Notes". It allows an Admin (you) to record voice notes or write texts tagged by specific moods. The Receiver (her) can then request a message based on how she is feeling, receiving a random, unplayed note from the collection.✨ Features🎙 Voice & Text Support: Upload voice notes or fallback to text poetry.🎭 Mood Tagging: Categorize messages into Romantic, Sad, or Hope.🔄 Smart Rotation: Ensures she never gets the same message twice until she has heard them all.🔁 Auto-Reset: Automatically reshuffles the "jar" when all messages in a mood have been played.☁️ Cloud Database: Uses PostgreSQL to ensure data is never lost, even when the bot restarts.⌨️ Interactive Menu: Easy-to-use button interface for the user.🛠️ Tech StackPython 3.10+pyTelegramBotAPI (Telebot)PostgreSQL (Database)Railway (Hosting Platform)🚀 Local Setup (Running on your computer)Clone the repositoryBashgit clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
-Install dependenciesBashpip install -r requirements.txt
-Configure IDsOpen bot.py and update these lines with your actual Telegram IDs:PythonADMIN_ID = 123456789   # Your ID
-HER_ID = 987654321     # Her ID
-Set up Environment VariablesCreate a file named .env in the root folder and add:Ini, TOMLBOT_TOKEN=your_telegram_bot_token_here
-DATABASE_URL=your_local_postgres_url (or remove this check for local testing with SQLite)
-Run the botBashpython bot.py
-🌐 Deployment (Railway)This bot is designed to be deployed on Railway.app with a PostgreSQL database.Push to GitHub: Upload your code (ensure .env is NOT uploaded).New Project: Go to Railway and click "Deploy from GitHub".Add Database: inside the Railway project, add a PostgreSQL service.Set Variables: Go to the Bot Service > Variables and add:BOT_TOKEN: Your Telegram Bot Token.DATABASE_URL: Copy this from the PostgreSQL service "Connect" tab.Deploy: Railway will automatically install requirements and start the bot.🤖 Commands🔒 Admin (You)CommandUsageDescription/upload <mood>/upload romanticUpload a voice note for a specific mood./addtext <mood> <text>/addtext sad I miss youSave a text message/poem for a mood.💖 User (Her)CommandDescription/start or /menuOpens the interactive button menu./romanticFetches a random romantic voice note./sadFetches a comforting voice note./hopeFetches a hopeful message./shayariFetches a random message from any category.📂 Project Structure├── bot.py              # Main bot logic
-├── requirements.txt    # List of python libraries
-├── Procfile            # Worker command for Railway
-├── .gitignore          # Tells git to ignore .env
-└── README.md           # Documentation
-🛡️ Security NoteThe .env file containing your BOT_TOKEN is included in .gitignore to prevent your secrets from being leaked on GitHub. Never share your token publically.
+# 🌙 Mood-Aware Voice Note Bot
+
+A personal Telegram bot that acts as a **"Digital Jar of Notes"**. It allows an Admin (you) to record voice notes or write texts tagged by specific moods. The Receiver (her) can then request a message based on how she is feeling, receiving a random, unplayed note from the collection.
+
+## ✨ Features
+
+* **🎙 Voice & Text Support:** Upload voice notes or fallback to text poetry.
+* **🎭 Mood Tagging:** Categorize messages into `Romantic`, `Sad`, or `Hope`.
+* **🔄 Smart Rotation:** Ensures she never gets the same message twice until she has heard them all.
+* **🔁 Auto-Reset:** Automatically reshuffles the "jar" when all messages in a mood have been played.
+* **☁️ Cloud Database:** Uses PostgreSQL to ensure data is never lost, even when the bot restarts.
+* **⌨️ Interactive Menu:** Easy-to-use button interface for the user.
+
+## 🛠️ Tech Stack
+
+* **Python 3.10+**
+* **pyTelegramBotAPI** (Telebot)
+* **PostgreSQL** (Database)
+* **Railway** (Hosting Platform)
+
+---
+
+## 🚀 Local Setup (Running on your computer)
+
+1. **Clone the repository**
+   ```bash
+   git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
+   cd your-repo-name
