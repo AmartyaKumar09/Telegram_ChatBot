@@ -207,4 +207,8 @@ def hope(message):
     send_shayari(message, "hope")
 
 print("Bot is running...")
+@bot.message_handler(func=lambda m: True)
+def debug_listener(message):
+    print(f"🕵️ DEBUG: Message received from ID: {message.from_user.id}")
+    bot.reply_to(message, f"I see you! Your ID is: {message.from_user.id}")
 bot.infinity_polling()
