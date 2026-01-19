@@ -1,7 +1,7 @@
 ﻿# Telegram_ChatBot
 # 🌙 Mood-Aware Voice Note Bot
 
-A personal Telegram bot that acts as a **"Digital Jar of Notes"**. It allows an Admin (you) to record voice notes or write texts tagged by specific moods. The Receiver (her) can then request a message based on how she is feeling, receiving a random, unplayed note from the collection.
+A personal Telegram bot that acts as a **"Digital Jar of Notes"**. It allows an Admin (you) to record voice notes or write texts tagged by specific moods. The user can then request a message based on how they are feeling, receiving a random, unplayed note from the collection.
 
 ## ✨ Features
 
@@ -35,7 +35,7 @@ A personal Telegram bot that acts as a **"Digital Jar of Notes"**. It allows an 
 | `/upload <mood>` | `/upload romantic` | Upload a voice note for a specific mood. |
 | `/addtext <mood> <text>` | `/addtext sad I miss you` | Save a text message/poem for a mood. |
 
-### 💖 User (Her)
+### 👨‍💻 User
 | Command | Description |
 | :--- | :--- |
 | `/start` or `/menu` | Opens the interactive button menu. |
@@ -54,3 +54,4 @@ A personal Telegram bot that acts as a **"Digital Jar of Notes"**. It allows an 
 ├── Procfile            # Worker command for Railway
 ├── .gitignore          # Tells git to ignore .env
 └── README.md           # Documentation
+
